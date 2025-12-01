@@ -1,0 +1,65 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.brand2 {
+    padding: 160px 0 120px 0;
+    margin: 0 30px;
+    margin-top: -40px;
+    background-color: $theme-color;
+    border-radius: 0 0 15px 15px;
+    @include breakpoint(max-xl2) {
+        padding: 160px 30px 120px 30px;
+        margin: -40px 0 0 0;
+     }
+    @include breakpoint(max-sm) {
+        padding: 100px 30px 80px 30px;
+        margin: -20px 0 0 0;
+     }
+
+     @include breakpoint(max-xxsmall) {
+        padding: 70px 0;
+     }
+
+     
+    &-title {
+        text-align: center;
+        color: $title-color;
+        text-align: center;
+        font-family: $body-font;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+        padding-bottom: 60px;
+        @include breakpoint(max-sm) {
+           padding-bottom: 40px;
+         }
+
+         @include breakpoint(max-xxsmall) {
+            font-size: 20px;
+            line-height: 20px;
+         }
+    }
+
+    &-wrapper {
+        text-align: center;
+    }
+
+    &-item {
+        width: 246px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        border-radius: 10px;
+        @include breakpoint(max-xxl) {
+           width: 200px;
+           height: 150px;
+         }
+
+         @include breakpoint(max-md) {
+             margin: 0 auto;   
+         }
+    }
+}

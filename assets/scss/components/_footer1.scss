@@ -1,0 +1,303 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+
+.footer1 {
+    margin: -70px 30px 0 30px;
+    padding: 190px 0;
+    position: relative;
+
+    @include breakpoint(max-xxl) {
+        margin: -70px 0 0 0;
+    }
+
+    @include breakpoint(max-lg) {
+        padding: 150px 80px;
+    }
+
+    @include breakpoint(max-md) {
+      padding: 150px 40px;  
+    }
+
+    @include breakpoint(max-sm) {
+      padding: 150px 15px;  
+    }
+
+    @include breakpoint(max-xxsmall) {
+        padding: 150px 0px 200px 0px;
+    }
+
+    &-top {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 129px;
+
+        @include breakpoint(max-lg) {
+            padding-bottom: 100px;
+        }
+
+        @include breakpoint(max-xxsmall) {
+            padding-bottom: 70px;
+        }
+
+        &__title {
+            color: $white;
+            text-align: center;
+            font-family: $body-font;
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 62px;
+            padding-bottom: 30px;
+
+            @include breakpoint(max-lg) {
+                font-size: 46px;
+                line-height: 52px;
+            }
+
+            @include breakpoint(max-md) {
+                font-size: 36px;
+                line-height: 46px;
+            }
+
+            @include breakpoint(max-xxsmall) {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+
+        &__btn-wrapper {}
+    }
+
+    &-widget__item {
+        @include breakpoint(max-xl) {
+            margin-bottom: 30px;
+        }
+
+        &-logo {
+            margin-bottom: 42px;
+        }
+
+        &-text {
+            color: #999;
+            font-family: $body-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            max-width: 320px;
+        }
+
+        &-social {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-top: 35px;
+
+            li a {
+                height: 40px;
+                width: 40px;
+                background-color: $white;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                display: inline-block;
+
+                &:hover {
+                    background-color: $theme-color;
+                }
+            }
+        }
+
+        &-title {
+            color: $white;
+            font-family: $body-font;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            padding-bottom: 50px;
+            @include breakpoint(max-xxsmall) {
+                padding-bottom: 30px;
+            }
+        }
+
+        &-list {
+            li {
+                position: relative;
+                padding-bottom: 16px;
+                padding-left: 20px;
+
+                a {
+                    color: #999;
+                    font-family: $body-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+
+                    &:hover {
+                        color: $theme-color !important;
+                    }
+                }
+
+                &::before {
+                    position: absolute;
+                    left: 00px;
+                    top: 12px;
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 50%;
+                    content: "";
+                    background-color: $theme-color;
+                }
+            }
+        }
+
+        &.style2 {
+            li {
+                padding-left: 0;
+                display: flex;
+                gap: 12px;
+
+                &::before {
+                    display: none;
+                }
+
+                span {
+                    font-size: 24px;
+                    padding-top: 4px;
+                    color: $theme-color;
+                }
+            }
+        }
+
+
+        &-input {
+            position: relative;
+            margin: 30px 0;
+
+            .form-control {
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                background-color: $white;
+                color: $title-color;
+                padding: 10px;
+                padding-left: 20px;
+                height: 56px;
+
+                &::placeholder {
+                    color: $text-color;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .theme-btn {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 56px;
+                width: 56px;
+                border-radius: 10px;
+                text-align: center;
+                line-height: 42px;
+                padding: 0;
+                padding-right: 10px;
+            }
+        }
+
+    }
+
+    &-bottom {
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        bottom: 0;
+
+        @include breakpoint(max-xxsmall) {
+            left: 0;
+            right: 0;
+        }
+
+
+        &-item {
+            padding: 40px 0 30px 0;
+
+            @include breakpoint(max-lg) {
+                flex-wrap: wrap;
+                justify-content: center !important;
+                text-align: center;
+            }
+
+            &__text {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+
+                @include breakpoint(max-xl) {
+                    font-size: 16px;
+                }
+
+            }
+
+            &__top-link {
+                a {
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 28px;
+
+                    @include breakpoint(max-lg) {
+                        padding:  0 15px;
+                    }
+
+                    span {
+                        padding-left: 4px;
+                    }
+                }
+            }
+
+            &__list {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 30px;
+
+                @include breakpoint(max-xxsmall) {
+                    flex-wrap: nowrap;
+                    gap: 10px;
+                    justify-content: center;
+                }
+
+                li {
+                    a {
+                        color: $title-color;
+                        font-family: $body-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+
+                        &:hover {
+                            color: $theme-color !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

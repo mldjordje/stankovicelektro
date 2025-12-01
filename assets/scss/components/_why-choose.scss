@@ -1,0 +1,235 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.why-choose2 {
+    background-color: $bg-color;
+    margin: 120px 30px;
+    border-radius: 15px;
+
+    @include breakpoint(max-xl2) {
+        margin: 120px 0; 
+        padding: 0 30px;
+     }
+
+     @include breakpoint(max-xxsmall) {
+       margin: 80px 0;
+       padding:  0 0px;
+     }
+
+    &-content {
+        padding-right: 0;
+        padding-top: 80px;
+        @include breakpoint(xxl) {
+            padding-top: 130px;
+            padding-right: 80px;
+         }
+
+        &-list {
+            background-color: $white;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            @include breakpoint(max-xxsmall) {
+                padding: 24px 20px;
+             }
+
+            &__number {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 40px;
+                @include breakpoint(max-md) {
+                display: none;
+                }
+            }
+
+            &-content {
+                max-width: 440px;
+
+                &__title {
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 28px;
+                    padding-bottom: 25px;
+                    @include breakpoint(max-xxsmall) {
+                       font-size: 22px;
+                       line-height: 30px;
+                       padding-bottom: 12px;
+                     }
+                }
+
+                &__text {
+                    color: $text-color;
+                    font-family: $body-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+    &-right {
+        position: relative;
+
+        &__thumb {
+            margin-right: -130px;
+
+            @include breakpoint(max-lg) {
+              margin-right: 0; 
+              margin-top: 30px; 
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__counter {
+            width: 416px;
+            padding: 44px 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $white;
+            position: absolute;
+            left: 60px;
+            bottom: 60px;
+            z-index: 9;
+            @include breakpoint(max-sm) {
+                left: 0;
+                bottom: 0; 
+                padding: 30px 20px;
+                width: 100%;
+                display: inline-flex;
+           }
+
+            &-count {
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: $green-color;
+                color: rgba(16, 16, 16, 0.00);
+                font-family: $body-font;
+                font-size: 72px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 82px;
+                padding-right: 40px;
+                position: relative;
+                @include breakpoint(max-sm) {
+                    font-size: 45px; 
+                    line-height: 55px;
+               }
+
+                &::after {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 90px;
+                    width: 1px;
+                    content: "";
+                    background-color: rgba(16, 16, 16, 0.10);
+                }
+            }
+
+            &-text {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 34px;
+                padding-left: 40px;
+
+                @include breakpoint(max-sm) {
+                    font-size: 18px;
+                    line-height: 26px;
+               }
+            }
+        }
+    }
+
+    .performance2 {
+        padding: 80px 0px;
+        @include breakpoint(xl2) { 
+            padding: 120px 0 110px 0;
+         }
+
+        &__title {
+            text-align: center;
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 62px;
+            padding-bottom: 60px;
+            @include breakpoint(max-sm) {
+                padding-bottom: 40px; 
+                font-size: 32px; 
+                line-height: 42px;
+           }
+        }
+
+        &-card {
+            border-radius: 10px;
+            border: 1px solid rgba(16, 16, 16, 0.10);
+            background: rgba(217, 217, 217, 0.00);
+            padding: 30px;
+            @include breakpoint(max-xl) {
+                margin-bottom: 30px;
+             }
+
+             @include breakpoint(max-xxsmall) {
+                padding: 30px 20px;
+             }
+
+            &__count {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 42px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 52px;
+                padding-bottom: 24px;
+                @include breakpoint(max-xxsmall) {
+                    font-size: 36px;
+                    line-height: 42px;
+                    padding-bottom: 18px;
+                 }
+            }
+
+            &__title {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+                padding-bottom: 22px;
+                @include breakpoint(max-xxsmall) {
+                    font-size: 24px;
+                    line-height: 28px;
+                    padding-bottom: 16px;
+                 }
+            }
+
+            &__text {
+                color: $text-color;
+                font-family: $body-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+
+.work-process1 {
+    @include breakpoint(max-lg) {
+        padding: 80px;
+    }
+
+    @include breakpoint(max-md) {
+       padding: 50px 40px; 
+    }
+
+    @include breakpoint(max-sm) {
+       padding: 50px 15px; 
+    }
+    @include breakpoint(max-xxsmall) {
+       padding: 50px 0px; 
+    }
+
+    &-card {
+        background-color: $bg-color;
+        border-radius: 15px;
+
+        &-content {
+            padding-left: 130px;
+            padding-right: 60px;
+
+            @include breakpoint(max-xxl) {
+                padding: 60px;
+            }
+
+            @include breakpoint(max-xl) {
+                padding-right: 24px;
+            }
+
+            @include breakpoint(max-md) {
+                padding: 30px;
+            }
+
+            @include breakpoint(max-sm) {
+                padding: 30px 20px;
+            }
+
+            @include breakpoint(max-xxsmall) {
+                padding: 20px 10px;
+            }
+
+            &__list {
+                border-top: 1px solid $title-color;
+                padding: 28px 0;
+                display: flex;
+                justify-content: space-between;
+
+                &:last-child {
+                    border-bottom: 1px solid $title-color;
+                }
+
+                &-number {
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 40px;
+                    @include breakpoint(max-sm) {
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+
+                    @include breakpoint(max-xxsmall) {
+                        display: none;
+                    }
+                }
+
+                &-item {
+                    max-width: 600px;
+                    margin-right: 70px;
+                    @include breakpoint(max-sm) {
+                        margin-right: 0;
+                    }
+                    &-title {
+                        color: $title-color;
+                        font-family: $body-font;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 28px;
+                        @include breakpoint(max-sm) {
+                            font-size: 24px;
+                        }
+                    }
+
+                    &-text {
+                        color: $text-color;
+                        font-family: $body-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                        padding-top: 24px;
+                        @include breakpoint(max-xxsmall) {
+                            padding-top: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__thumb {
+
+            img {
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+    }
+}

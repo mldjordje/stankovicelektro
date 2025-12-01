@@ -1,0 +1,194 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+
+.blog2 {
+    background-color: $bg-color;
+    position: relative;
+    margin: 0 30px;
+    @include breakpoint(max-xl2) {
+        margin: 0; 
+        padding: 120px 30px 0 30px;
+     }
+
+     @include breakpoint(max-xxsmall) {
+        padding: 70px 0 0 0;
+     }
+
+    &-card {
+        background-color: $white;
+        border-radius: 15px;
+        padding: 30px;
+        position: relative;
+        z-index: 3;
+        overflow: hidden;
+
+        @include breakpoint(max-xxxl) {
+            padding: 30px 24px;
+        }
+
+        @include breakpoint(max-xl) {
+            margin-bottom: 30px;
+         }
+
+        @include breakpoint(max-lg) {
+            padding: 24px 15px;
+        }
+
+        @include breakpoint(max-md) {
+            padding: 40px;    
+        }
+
+        @include breakpoint(max-sm) {
+            padding: 20px 10px ; 
+       }
+
+        &__thumb {
+            position: relative;
+            border-radius: 15px;
+            margin: 0 -30px;
+            @include breakpoint(max-lg) {
+              margin: 0;  
+            }
+
+            img {
+                width: 100%;
+            }
+
+            &-date {
+                color: $green-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                position: absolute;
+                right: 61px;
+                top: 6px;
+
+                @include breakpoint(max-xxl) {
+                    right: 60px;
+                }
+                @include breakpoint(max-xl) {
+                    right: 70px;
+                }
+
+                @include breakpoint(max-lg) {
+                    right: 33px;
+                }
+
+                @include breakpoint(max-md) {
+                    right: 82px;
+                }
+
+                @include breakpoint(max-sm) {
+                    right: 58px;
+                }
+
+                @include breakpoint(max-xxsmall) {
+                    top: 1%;
+                    right: 11%;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        &__title {
+            &-link {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 36px;
+                padding-bottom: 30px;
+
+                @include breakpoint(max-lg) {
+                    font-size: 22px !important;
+                    line-height: 30px;
+                }
+
+                @include breakpoint(max-xxsmall) {
+                    font-size: 20px !important;
+                    list-style: 26px;
+                    padding-bottom: 16px;
+                 }
+
+            }
+        }
+
+        &__meta {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding-bottom: 15px;
+
+            &-text {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                padding-left: 18px;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 50%;
+                    content: "";
+                    background-color: $title-color;
+                }
+            }
+        }
+
+
+        &__description {
+            padding-top: 18px;
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+
+            @include breakpoint(max-xxsmall) {
+                padding-top: 8px;
+            }
+        }
+
+        &__btn {
+            height: 52px;
+            width: 52px;
+            border-radius: 50%;
+            background-color: $green-color;
+            display: inline-block;
+            line-height: 52px;
+            text-align: center;
+            font-size: 24px;
+            color: $white;
+            margin-top: 30px;
+
+            @include breakpoint(max-xxsmall) {
+                margin-top: 20px;
+            }
+
+            &:hover {
+                background-color: $theme-color;
+                color: $title-color;
+            }
+        }
+    }
+
+    &-shape1 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+}

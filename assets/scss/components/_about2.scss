@@ -1,0 +1,177 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.about2 {
+    background-color: $theme-color;
+
+    &-left {
+        position: relative;
+
+        &__thumb {
+            position: relative;
+            padding-left: 180px;
+            z-index: 3;
+            margin-right: -70px;
+            @include breakpoint(max-xxl) {
+                margin-right: 0;
+             }
+
+             @include breakpoint(max-xl) {
+                padding-left: 0;
+             }
+
+             @include breakpoint(max-lg) {
+               margin-bottom: 30px; 
+             }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__year {
+            background-color: $white;
+            display: inline-block;
+            position: absolute;
+            left: -273px;
+            bottom: 286px;
+            transform: rotate(270deg);
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: $title-color;
+            font-family: $body-font;
+            font-size: 118px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 110px;
+            padding: 33px 25px 45px 25px;
+            border-radius: 10px 10px 0 0;
+
+            @include breakpoint(max-xl2) {
+                font-size: 110px;
+                left: -260px;
+                bottom: 266px;
+            }
+
+
+            @include breakpoint(max-xxxl) {
+                font-size: 84px;
+                left: -173px;
+                bottom: 187px;
+
+            }
+
+            @include breakpoint(max-xxl) {
+                font-size: 74px;
+                line-height: 80px;
+                left: -143px;
+                bottom: 170px;
+            }
+
+            @include breakpoint(max-xl) {
+                position: initial;
+                transform: rotate(0);
+             }
+
+             @include breakpoint(max-lg) {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 9;
+             }
+
+            @include breakpoint(max-md) {
+                font-size: 60px;
+                line-height: 80px;
+            }
+
+            @include breakpoint(max-xxsmall) {
+                font-size: 34px;
+            }
+        }
+    }
+
+    &-content {
+        margin-left: 140px;
+        max-width: 588px;
+        @include breakpoint(max-xxl) {
+            margin-left: 30px;
+         }
+
+         @include breakpoint(max-xxsmall) {
+            margin-left: 10px;
+         }
+
+        .section-title {
+            &__subtitle {
+                color: $title-color;
+
+                &::before {
+                    background-color: $title-color;
+                }
+            }
+
+            &__title {
+                color: $title-color;
+            }
+
+            &__text {
+                color: $title-color;
+            }
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 45px;
+            gap: 30px;
+
+            @include breakpoint(max-sm) {
+                flex-wrap: wrap; 
+                gap: 16px;
+                padding-top: 20px;
+           }
+
+            &-icon {
+                width: 145px;
+                height: 106px;
+                background-color: $white;
+                display: inline-block;
+                transform: skewX(-10deg);
+                text-align: center;
+                line-height: 106px;
+                @include breakpoint(max-xxsmall) {
+                    width: 100px;
+                    height: 90px;
+                 }
+            }
+
+            &-title {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+                padding-bottom: 24px;
+                @include breakpoint(max-sm) {
+                    padding-bottom: 16px;  
+               }
+
+               @include breakpoint(max-xxsmall) {
+                font-size: 22px;
+             }
+            }
+
+            &-text {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
+    }
+}

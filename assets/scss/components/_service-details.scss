@@ -1,0 +1,137 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.service-details{
+    @include breakpoint(max-xl2) {
+        margin: 0; 
+        padding: 120px 30px;
+     }
+
+     @include breakpoint(max-lg) {
+         padding: 80px 30px;       
+     }
+
+     @include breakpoint(max-xxsmall) {
+        padding: 70px 10px;
+     }
+     @include breakpoint(max-xxsmall) {
+        padding: 70px 0px;
+     }
+    &__thumb{
+        img{
+            width: 100%;
+        }
+    }
+    &-content{
+        &__title{
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 52px;
+            padding-bottom: 30px;
+            @include breakpoint(max-lg) {
+                font-size: 34px;
+                line-height: 42px;
+                padding-bottom: 20px;
+              }
+            @include breakpoint(max-xxsmall) {
+                font-size: 26px;
+                line-height: 36px;
+                padding-bottom: 16px;
+              }
+        }
+        &__text{
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            padding-bottom: 28px;
+            @include breakpoint(max-lg) {
+                padding-bottom: 16px;
+              }
+        }
+    }
+
+    &-list{
+        display: flex;
+        gap: 60px;
+        padding: 30px 0;
+        border-top: 1px solid rgba(16, 16, 16, 0.10);
+        @include breakpoint(max-xl) {
+            gap: 30px;
+          }
+          @include breakpoint(max-md) {
+            padding-top: 20px;
+          }
+        &__number{
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            @include breakpoint(max-xxsmall) {
+               display: none;
+              }
+        }
+        &-content{
+            &__title{
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+                padding-bottom: 20px;
+                @include breakpoint(max-xxsmall) {
+                    font-size: 22px;
+                    padding-bottom: 12px;
+                  }
+            }
+            &__text{
+                color: $text-color;
+                font-family: $body-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
+    }
+
+    &-video-wrapper{
+        margin: 60px 0;
+    }
+    
+    &-video {
+        text-align: center;
+        position: relative;
+        z-index: 3;
+        padding: 195px 0;
+        @include breakpoint(max-md) {
+           padding: 100px 0;
+          }
+
+        &-btn {
+            background-color: $white;
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            line-height: 160px;
+            font-size: 20px;
+            font-weight: 600;
+            color: $title-color;
+            @include breakpoint(max-md) {
+                height: 100px;
+                width: 100px;
+                line-height: 100px;
+              }
+        }
+    }
+}

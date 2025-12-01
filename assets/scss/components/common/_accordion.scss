@@ -1,0 +1,117 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.accordion {
+    .global-accordion-item {
+        border-bottom: 1px solid $title-color;
+
+        .global-accordion {
+            &-header {
+                margin: 0;
+                -webkit-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+
+            &-button {
+                color: #1A1919;
+                font-family: $body-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 34px;
+                padding: 25px 0px 10px 0px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+
+                @include breakpoint(max-xxl) {
+                    font-size: 20px;
+                }
+
+                @include breakpoint(max-sm) {
+                    font-size: 16px;
+                    padding-top: 8px;
+                    line-height: 24px;
+                }
+
+                .number {
+                    margin-right: 42px;
+
+                    @include breakpoint(max-xxl) {
+                        margin-right: 8px;
+                    }
+
+                    @include breakpoint(max-xxsmall) {
+                        margin-right: 0;
+                     }
+                }
+
+                .icon {
+                    z-index: 11;
+
+                    i {
+                        width: 40px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        border-radius: 50%;
+                        color: $title-color;
+                        font-size: 18px;
+                        display: inline-block;
+                        transform: rotate(-45deg);
+
+                        @include breakpoint(max-sm) {
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+
+                &.collapsed {
+                    padding-bottom: 26px;
+
+                    .icon {
+                        transform: rotate(90deg);
+
+                        i {
+                            color: $title-color;
+                        }
+                    }
+                }
+            }
+
+            &-body {
+                padding: 13px 0px 24px 0px;
+                border-top: 0;
+                color: $text-color;
+                font-family: $body-font;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                @include breakpoint(max-xxsmall) {
+                    padding-top: 0;
+                 }
+
+                p {
+                    color: $text-color;
+                    font-family: $body-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                    padding-left: 96px;
+                    @include breakpoint(max-xl) {
+                        padding-left: 0;
+                     }
+                    @include breakpoint(max-sm) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
