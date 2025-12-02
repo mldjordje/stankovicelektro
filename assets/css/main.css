@@ -3246,6 +3246,16 @@ input:focus {
   border: none;
 }
 
+.header-logo img {
+  max-width: 150px;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .header-logo img {
+    max-width: 120px;
+  }
+}
+
 .global-header1-menu-area {
   padding: 18px 30px 10px 30px;
   border-radius: 0;
@@ -3431,6 +3441,10 @@ input:focus {
   display: block;
   text-align: center;
   background-color: var(--title);
+}
+.global-menu-wrapper .mobile-logo img {
+  max-width: 160px;
+  height: auto;
 }
 .global-menu-wrapper .mobile-logo svg {
   max-width: 185px;
@@ -4122,12 +4136,17 @@ input:focus {
 }
 .intro1-left__thumb img {
   width: 100%;
-  max-height: 652px;
+  max-width: 420px;
+  max-height: 420px;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
   border-radius: 15px;
 }
 @media (max-width: 767px) {
   .intro1-left__thumb img {
-    max-height: auto;
+    max-width: 320px;
+    max-height: 320px;
   }
 }
 .intro1-left .img2 {
@@ -4143,6 +4162,16 @@ input:focus {
     right: -180px;
     bottom: 30px;
     max-width: 500px;
+  }
+}
+@media (max-width: 991px) {
+  .intro1-left .img2 {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin: 20px auto 0;
+    max-width: 320px;
+    padding: 25px;
   }
 }
 @media (max-width: 1399px) {
