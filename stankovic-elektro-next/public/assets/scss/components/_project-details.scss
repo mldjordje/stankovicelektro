@@ -1,0 +1,193 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.project-details {
+    @include breakpoint(max-xl2) {
+        margin: 0; 
+        padding: 120px 30px;
+     }
+
+     @include breakpoint(max-lg) {
+         padding: 80px 30px;       
+     }
+
+     @include breakpoint(max-xxsmall) {
+        padding: 70px 0px;
+     }
+    &__thumb {
+        position: relative;
+        z-index: 1;
+        @include breakpoint(max-sm) {
+           margin-bottom: 30px;        
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &-meta {
+        max-width: 1240px;
+        margin: -70px auto 0 auto;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 15px;
+        background-color: $white;
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
+        z-index: 3;
+        padding: 35px 0;
+        @include breakpoint(max-lg) {
+             flex-wrap: wrap; 
+             gap: 12px; 
+             justify-content: space-between; 
+             padding: 30px;   
+        }
+
+        @include breakpoint(max-xxsmall) {
+            margin-top: 0;   
+         }
+
+        &-item {
+            &__title {
+                color: $text-color;
+                font-family: $body-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                padding-bottom: 10px;
+            }
+
+            &__text {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px;
+            }
+        }
+    }
+
+    &-content {
+        padding-top: 60px;
+        @include breakpoint(max-md) {
+             padding-top: 30px;      
+        }
+
+        &__title {
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 52px;
+            padding-bottom: 30px;
+            @include breakpoint(max-md) {
+                font-size: 30px; 
+                line-height: 38px;  
+                padding-bottom: 20px;
+            }
+            @include breakpoint(max-xxsmall) {
+                font-size: 25px; 
+                line-height: 32px;  
+                padding-bottom: 20px;
+            }
+        }
+
+        &__text {
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+    &-slider {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 45px;
+        border-radius: 15px;
+        background: $bg-color;
+        margin-top: 120px;
+    
+         @include breakpoint(max-lg) {
+            margin-top: 70px;       
+         }
+
+         @include breakpoint(max-xxsmall) {
+            padding: 30px 24px;       
+         }
+
+        &__prev {
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 36px;
+            padding-left: 20px;
+            position: relative;
+            @include breakpoint(max-xxsmall) {
+               font-size: 18px;    
+            }
+            &::before{
+                position: absolute;
+                left: -8px;
+                top: 12px;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                content: "";
+                background-color: $title-color;
+                transition: 0.4s all ease-in-out;
+            }
+            &:hover{
+                color: $green-color;
+                &::before{
+                    background-color: $green-color;
+                } 
+            }
+        }
+
+        &__next {
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 36px;
+            padding-right: 20px;
+            position: relative;
+            @include breakpoint(max-xxsmall) {
+                font-size: 18px;   
+             }
+            &::after{
+                position: absolute;
+                right: -8px;
+                top: 12px;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                content: "";
+                background-color: $title-color;
+                transition: 0.4s all ease-in-out;
+            }
+            &:hover{
+                color: $green-color;
+                &::after{
+                    background-color: $green-color;
+                } 
+            }
+        }
+        img{
+            @include breakpoint(max-xxsmall) {
+                display: none;   
+             }
+        }
+    }
+}

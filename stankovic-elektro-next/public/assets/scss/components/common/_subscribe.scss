@@ -1,0 +1,134 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+
+.subscribe{
+    position: relative;
+    &-input {
+        max-width: 796px;
+        margin: 0 auto;
+        border-radius: 65px;
+        border: 1px solid rgba(16, 16, 16, 0.15);
+        background: rgba(247, 242, 236, 0.00);
+        height: 76px;
+        position: relative;
+        margin-top: 68px;
+        margin-bottom: 500px;
+        @include breakpoint(max-md) {
+           margin-top: 36px;
+           }
+
+           @include breakpoint(max-sm) {
+            margin-bottom: 30px;
+           }
+    
+        .form-control {
+            color: $title-color;
+            padding: 10px;
+            padding-left: 20px;
+            height: 56px;
+            margin: 8px;
+            width: 98%;
+            border-radius: 45px;
+            border: 1px solid rgba(16, 16, 16, 0.15);
+            background: #F9F5F2;
+            @include breakpoint(max-md) {
+                width: 97%;
+               }
+               @include breakpoint(max-xxsmall) {
+                width: 95%;
+               }
+    
+            &::placeholder {
+                color: $text-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+            }
+    
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    
+        .theme-btn {
+            position: absolute;
+            top: 49%;
+            transform: translateY(-50%);
+            right: 12px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            padding: 0;
+            padding-right: 10px;
+        }
+    }
+
+   &-thumb1{
+    position: absolute;
+    top: 120px;
+    left: 30px;
+        @include breakpoint(max-xxl) {
+           width: 200px;
+           height: 200px;
+        }
+        @include breakpoint(max-xl) {
+           width: 150px;
+           height: 150px;
+        }
+        @include breakpoint(max-md) {
+            display: none;
+           }
+    img{
+        max-width: 100%;
+    }
+   }
+   &-thumb2{
+    position: absolute;
+    top: 210px;
+    right: 30px;
+    @include breakpoint(max-xxl) {
+        width: 200px;
+        height: 200px;
+     }
+     @include breakpoint(max-xl) {
+        width: 150px;
+        height: 150px;
+     }
+     @include breakpoint(max-md) {
+       display: none;
+      }
+    img{
+        max-width: 100%;
+    }
+   }
+   &-thumb3{
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    @include breakpoint(max-sm) {
+        position: initial;
+        text-align: center;
+       }
+    img{
+        max-width: 100%;
+    }
+   }
+   &-thumb4{
+    position: absolute;
+    bottom: 120px;
+    right: 18%;
+        
+    @include breakpoint(max-sm) {
+        display: none;
+       }
+    img{
+        max-width: 100%;
+    }
+   }
+
+}

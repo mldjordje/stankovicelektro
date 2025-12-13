@@ -1,0 +1,266 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.intro2 {
+    padding-bottom: 1px;
+    position: relative;
+    padding: 0 60px;
+    @include breakpoint(max-md) {
+        padding: 0;        
+    }
+    
+    .container-1770, .container-1320 {
+        @include breakpoint(max-xxsmall) {
+            padding: 0;
+        }
+    }
+    &-bg::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 99.5%;
+        width: 99.8%;
+        content: "";
+        background: rgba(0, 0, 0, 0.60);
+        z-index: 1;
+    }
+
+    &-content {
+        position: relative;
+        z-index: 3;
+        padding: 226px 0;
+        @include breakpoint(max-xxxl) {
+            padding: 160px 0 226px 30px;
+         }
+
+         @include breakpoint(max-xl) {
+            padding: 100px 0 170px 30px;
+         }
+
+         @include breakpoint(max-sm) {
+              padding-bottom: 100px;  
+         }
+
+         @include breakpoint(max-xs) {
+            padding-left: 10px;
+         }
+
+        &__subtitle {
+            color: $white;
+            font-family: $body-font;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 36px;
+            padding-bottom: 30px;
+            @include breakpoint(max-xxsmall) {
+                font-size: 22px;
+                line-height: 30px;
+                padding-bottom: 16px;
+             }
+        }
+
+        &__title {
+            color: $white;
+            font-family: $body-font;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 82px;
+            padding-bottom: 25px;
+
+            @include breakpoint(max-xxxl) {
+               font-size: 65px;
+               line-height: 72px;
+             }
+            @include breakpoint(max-xxl) {
+               font-size: 58px;
+               line-height: 68px;
+             }
+
+             @include breakpoint(max-sm) {
+                font-size: 48px;
+                line-height: 58px;
+             }
+
+             @include breakpoint(max-xxsmall) {
+                font-size: 36px;
+                line-height: 46px;
+                padding-bottom: 16px;
+             }
+        }
+
+        &__text {
+            color: $white;
+            font-family: $body-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            padding-bottom: 30px;
+        }
+
+        &__btn-wrapper {}
+    }
+
+
+    &-right {
+        // position: relative;
+
+        &-video {
+            position: absolute;
+            right: 8%;
+            top: 42%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            border: 1px solid $white;
+            text-align: center;
+            line-height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include breakpoint(max-lg) {
+               display: none; 
+             }
+
+            @include breakpoint(max-xxsmall) {
+                left: 50%;
+                top: 50%;
+            }
+        }
+
+        &-video-btn {
+            background-color: $white;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+
+            i {
+                font-size: 24px;
+                color: $green-color;
+                line-height: 100px;
+            }
+        }
+
+        &-experience {
+            width: 463px;
+            height: 188px;
+            background-color: $white;
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+            z-index: 3;
+            padding: 40px;
+            box-shadow: 0px 40px 20px rgba(0, 0, 0, 0.1);
+
+            @include breakpoint(max-lg) {
+                width: 350px;
+                height: 170px;
+                padding: 30px 20px;
+                right: 0;
+            }
+
+            @include breakpoint(max-sm) {
+              display: none;  
+            }
+
+            &__year {
+                color: rgba(16, 16, 16, 0.00);
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: $title-color;
+                font-family: $body-font;
+                font-size: 52px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 62px;
+                padding-bottom: 16px;
+
+                @include breakpoint(max-lg) {
+                font-size: 46px;
+                line-height: 56px;
+                }
+            }
+
+            &-btn {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 18px;
+                padding-bottom: 6px;
+                border-bottom: 1px solid $title-color;
+            }
+        }
+    }
+
+    .swiper-arrow {
+        display: flex;
+        position: absolute;
+        bottom: 60px;
+        left: 13%;
+        z-index: 9;
+        gap: 20px;
+        @include breakpoint(max-md) {
+             display: none;   
+        }
+
+        .svg-img {
+            transition: 0.4s all ease-in-out;
+        }
+
+        .swiper-nav:hover {
+            .svg-img {
+                filter: brightness(0) saturate(100%) invert(74%) sepia(77%) saturate(441%) hue-rotate(2deg) brightness(101%) contrast(102%);
+            }
+        }
+    }
+
+    &-social {
+        display: inline-flex;
+        align-items: center;
+        gap: 80px;
+        position: absolute;
+        left: 20px;
+        top: 40px;
+        z-index: 9;
+        flex-direction: column-reverse;
+        @include breakpoint(max-xxxl) {
+            gap: 60px;
+         }
+
+         @include breakpoint(max-md) {
+           display: none;  
+         }
+
+        li a {
+            writing-mode: vertical-lr;
+            position: relative;
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 26px;
+            &::before{
+                position: absolute;
+                left: 9px;
+                top: -15px;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                content: "";
+                background-color: $title-color;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,221 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.main-sidebar {
+    .single-sidebar-widget {
+        padding: 35px;
+        background: $bg-color;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        margin-bottom: 30px;
+        border-radius: 10px;
+
+        @include breakpoint(max-xxsmall) {
+            padding: 30px 10px;
+        }
+
+        // Blog Post widget 
+        &__post {
+            &-items {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                padding-bottom: 15px;
+                padding-top: 15px;
+                border-bottom: 1px solid rgba(16, 16, 16, 0.15);
+                @include breakpoint(max-xl) {
+                    gap: 14px;
+                }
+
+                &:first-child {
+                    padding-top: 0;
+                }
+
+                &:last-child {
+                    border-bottom: 0;
+                    padding-bottom: 0;
+                }
+
+                &-thumb {}
+
+                &-content {
+
+                    &-date {
+                        color: $green-color;
+                        font-family: $body-font;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px;
+                        padding-bottom: 5px;
+                    }
+
+                    h5 a {
+                        color: $title-color;
+                        font-family: $body-font;
+                        font-size: 18px !important;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+        // category widget 
+        &__categories {
+            ul {
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 15px 0;
+                    border-bottom: 1px solid rgba(16, 16, 16, 0.15);
+                    &:first-child{
+                        padding-top: 0;
+                    }
+                    &:last-child{
+                        border-bottom: none ;
+                        padding-bottom: 0;
+                    }
+
+                    &:hover a{
+                        color: $green-color;
+                        .svg-img{
+                            filter: invert(15%) sepia(52%) saturate(481%) hue-rotate(135deg);
+                        }
+                    }
+
+                    &:hover span{
+                        color: $green-color;
+                    }
+
+                    a {
+                        color: $title-color;
+                        font-family: $body-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 28px;
+
+                        span {
+                            padding-right: 8px;
+                        }
+                    }
+
+                    span {
+                        color: $title-color;
+                        text-align: right;
+                        font-family: $body-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 28px;
+                        transition: 0.4s all ease-in-out;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .widget-title {
+        color: $title-color;
+        font-family: $body-font;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+        padding-bottom: 35px;
+    }
+
+    // search widget 
+    .search-widget {
+        form {
+            width: 100%;
+            position: relative;
+
+            input {
+                background: $white;
+                font-size: 15px;
+                padding: 12px 20px;
+                width: 100%;
+                border: none;
+                color: $text-color;
+                border-radius: 8px;
+                height: 56px;
+            }
+
+            button {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 60px;
+                font-size: 18px;
+                height: 100%;
+                background: transparent;
+                border: none;
+                color: $title-color;
+                text-align: center;
+                transition: 0.4s all ease-in-out;
+                background: $theme-color;
+                color: $title-color;
+                border-radius: 0 10px 10px 0;
+
+                &:hover {
+                    background: $black;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+
+
+    // Tag widget 
+    .tagcloud {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        a.active {
+            background: $theme-color !important;
+            color: $title-color !important;
+        }
+
+        li {
+            margin-right: 14px;
+
+            a {
+               
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2px 18px;
+                background: $white;
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                text-transform: capitalize;
+                margin-bottom: 14px;
+                border: none;
+                border-radius: 4px;
+                transition: all 0.4s ease-in-out;
+                @include breakpoint(max-xxsmall) {
+                    padding: 2px 10px;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    background: $theme-color !important;
+                    color: $title-color !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+/*-----------------------------------------------------------------
+Theme Name: Elecfix
+Author: Rox_Themes
+Author URI: https://themeforest.net/user/rox_themes/portfolio
+Version: 1.0.0 
+Description: Elecfix - Electrical Services HtmlTemplate
+ 
+-------------------------------------------------------------------
+ CSS TABLE OF CONTENTS
+-------------------------------------------------------------------
+1.Common
+2.Header
+3.Intro
+4.About
+5.Feature
+6.Services
+7.Testimonial
+8.Contact
+9.Project
+10.Work Process
+11.Price
+12.Blog
+13.Why Choose
+14.Brand
+15.Team
+16.FAQ
+17.Cta
+18.Service Details
+19.Project Details
+20.Contact
+21.Error 
+22.Footer
+------------------------------------------------------------------*/
+
+
+//====== Components Start ======//
+
+/* 1.Common */
+@use "./components/common/counter";
+@use "./components/common/marquee";
+@use "./components/common/accordion";
+@use "./components/common/search";
+@use "./components/common/bradcrumb";
+@use "./components/common/video";
+@use "./components/common/subscribe";
+@use "./components/common/tab";
+@use "./components/common/widget";
+@use "./components/common/pagination";
+
+/* 2.Header */
+@use "./components/header1";
+@use "./components/header2";
+
+ /* 3.Intro */
+@use "./components/intro1";
+@use "./components/intro2";
+
+ /* 4.About */
+@use "./components/about1";
+@use "./components/about2";
+
+ /* 5.Feature */
+@use "./components/feature1";
+@use "./components/feature2";
+
+
+ /* 6.Services */
+@use "./components/service1";
+@use "./components/service2";
+
+ /* 7.Testimonial */
+@use "./components/testimonial1";
+@use "./components/testimonial2";
+
+ /* 8.Contact */
+@use "./components/contact1";
+@use "./components/contact2";
+
+ /* 9.Project*/
+@use "./components/project1";
+
+ /* 10.Work Process */
+@use "./components/work-process1";
+
+ /* 11.Price*/
+@use "./components/price1.scss";
+
+ /* 12.Blog */
+@use "./components/blog1";
+@use "./components/blog2";
+@use "./components/blog-details";
+
+ /* 13.Why Choose */
+@use "./components/why-choose";
+
+ /* 14.Brand */
+@use "./components/brand2";
+
+ /* 15. Team */
+@use "./components/team2";
+
+ /* 16.FAQ */
+@use "./components/faq2";
+
+ /* 17.Cta */
+@use "./components/cta2";
+
+ /* 18.Service Details */
+@use "./components/service-details";
+
+ /* 19.Project Details */
+@use "./components/project-details";
+
+ /* 20.Contact */
+@use "./components/contact-page";
+
+ /* 21.Error */
+ @use "./components/error";
+
+ /* 22.Footer */
+@use "./components/footer1";
+@use "./components/footer2";
+
+//====== Components End ======//
+
+//====== Template Section Style End ======//

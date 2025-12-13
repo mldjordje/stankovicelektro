@@ -1,0 +1,47 @@
+@use '../root/' as *;
+@use '../utilities' as *;
+
+
+.faq2{
+    padding: 120px 0px;
+    position: relative;
+    @include breakpoint(max-lg) {
+      padding: 0 30px 80px;          
+    }
+    @include breakpoint(max-xxsmall) {
+        padding: 0px 0px 80px;
+     }
+    &::after{
+        position: absolute;
+        left: 30px;
+        top: 0;
+        width: 35%;
+        height: 100%;
+        content: "";
+        background-color: $theme-color;
+        z-index: -1;
+        border-top-left-radius: 15px;
+        @include breakpoint(max-xl2) {
+            left: 0;
+         }
+         @include breakpoint(max-lg) {
+           display: none;     
+         }
+    }
+
+    &-thumb{
+        padding-right: 90px;
+        @include breakpoint(max-xxl) {
+            padding-right: 0;
+         }
+
+         @include breakpoint(max-lg) {
+            margin-bottom: 30px;    
+         }
+        img{
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+}
+

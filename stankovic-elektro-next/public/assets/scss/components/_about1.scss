@@ -1,0 +1,244 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+
+.about1 {
+    @include breakpoint(max-lg) {
+        padding: 80px;
+    }
+
+    @include breakpoint(max-md) {
+        padding: 80px 40px;
+    }
+
+    @include breakpoint(max-sm) {
+        padding: 80px 15px;
+    }
+
+    &-left {
+        position: relative;
+
+        &__thumb {
+            margin-left: 140px;
+
+            @include breakpoint(max-sm) {
+                margin-left: 0;
+            }
+
+            img {
+                max-width: 100%;
+                margin-right: 0;
+                margin-left: auto;
+            }
+        }
+
+        &__experience {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 290px;
+            height: 177px;
+            flex-shrink: 0;
+            background-color: $theme-color;
+            border-radius: 15px;
+            padding: 30px;
+
+            @include breakpoint(max-xxxl) {
+                height: 160px;
+                width: 250px;
+            }
+
+            @include breakpoint(max-lg) {
+                right: 40px;
+            }
+
+            @include breakpoint(max-md) {
+                right: 0;
+            }
+
+            @include breakpoint(max-sm) {
+                bottom: 80px;
+            }
+
+            @include breakpoint(max-xxsmall) {
+                height: 134px;
+                width: 230px;
+                padding: 20px;
+            }
+
+
+
+            &-counter {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 72px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 82px;
+
+                @include breakpoint(max-md) {
+                    font-size: 48px;
+                    line-height: 60px;
+                }
+
+            }
+
+            &-text {
+                padding-top: 5px;
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px;
+            }
+        }
+
+        &__year {
+            position: absolute;
+            left: -290px;
+            bottom: 290px;
+            transform: rotate(270deg);
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: $title-color;
+            font-family: $body-font;
+            font-size: 118px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 118px;
+
+            @include breakpoint(max-xxl) {
+                font-size: 80px;
+                line-height: 80px;
+                left: -180px;
+                bottom: 200px;
+            }
+
+            @include breakpoint(max-md) {
+                font-size: 60px;
+                line-height: 80px;
+                left: -110px;
+                bottom: 147px;
+            }
+
+            @include breakpoint(max-sm) {
+                position: initial;
+                left: 0;
+                bottom: 0;
+                transform: rotate(0);
+            }
+
+            @include breakpoint(max-xxsmall) {
+                font-size: 35px;
+            }
+        }
+    }
+
+    &-content {
+        padding-right: 45px;
+        padding-left: 10px;
+        position: relative;
+        z-index: 3;
+
+        @include breakpoint(max-lg) {
+            margin-top: 30px;
+        }
+
+        @include breakpoint(max-sm) {
+        padding: 0;
+        }
+
+        &__list {
+            padding-top: 30px;
+
+            @include breakpoint(max-xl) {
+                padding-top: 16px;
+            }
+           
+            &-title {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+                padding-left: 25px;
+                position: relative;
+
+                @include breakpoint(max-xxsmall) {
+                    font-size: 19px;
+                    padding-left: 14px;
+                }
+
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    height: 12px;
+                    width: 12px;
+                    border-radius: 50%;
+                    transform: translateY(-50%);
+                    content: "";
+                    background-color: $green-color;
+                }
+            }
+
+            &-text {
+                padding-top: 30px;
+                color: $text-color;
+                font-family: $body-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+
+                @include breakpoint(max-xl) {
+                    padding-top: 16px;
+                }
+
+                @include breakpoint(max-xxsmall) {
+                    padding-top: 10px;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+    
+            }
+        }
+
+        &__btn-wrapper {
+            margin-top: 45px;
+
+            @include breakpoint(max-xl) {
+                margin-top: 24px;
+            }
+        }
+    }
+
+    &.style2{
+        background-color: $bg-color;
+        margin: 0 30px 173px 30px;
+        position: relative;
+        padding-bottom: 300px;
+        border-radius: 15px;
+        @include breakpoint(max-xl2) {
+            margin-left: 0;
+            margin-right: 0;
+            padding-bottom: 280px;
+         }
+
+         @include breakpoint(max-xxsmall) {
+            padding-bottom: 80px;
+            margin-bottom: 0;
+           }
+        .about-shape{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            @include breakpoint(max-xxsmall) {
+                display: none;
+               }
+        }
+    }
+}

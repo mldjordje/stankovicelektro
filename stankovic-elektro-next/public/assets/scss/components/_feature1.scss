@@ -1,0 +1,86 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+
+.feature1{
+    &-bg{
+        background-color: $theme-color;
+        border-radius: 15px;
+        padding: 120px 140px;
+        @include breakpoint(max-md) {
+        padding: 80px 40px;
+        }
+
+        @include breakpoint(max-sm) {
+        padding: 80px 15px;
+        }
+
+        @include breakpoint(max-xxsmall) {
+            padding: 60px 15px;
+        }
+    }
+    &-card{
+        position: relative;
+        padding-left: 35px;
+
+        @include breakpoint(max-xl) {
+            padding-left: 25px;
+            margin-bottom: 30px;
+         }
+        &::after{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            content: "";
+            background-color: $green-color;
+        }
+        &::before{
+            position: absolute;
+            left: 4px;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            content: "";
+            background-color: $green-color;
+        }
+        &__icon{
+            height: 60px;
+            width: 60px;
+            background-color: $green-color;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            transition: 0.3s all ease-in-out;
+        }
+        &__title{
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            padding: 35px 0 25px 0;
+            @include breakpoint(max-xl) {
+               font-size: 28px;
+             }
+
+             @include breakpoint(max-xxsmall) {
+                padding: 15px 0 10px 0;
+                font-size: 26px;
+            }
+        }
+        &__text{
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+        }
+        &:hover &__icon{
+            transform: rotateY(180deg);
+        }
+    }
+}

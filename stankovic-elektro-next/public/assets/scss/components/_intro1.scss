@@ -1,0 +1,259 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+
+.intro1 {
+    position: relative;
+    z-index: 1;
+
+
+    &-bg {
+        margin: 0 30px;
+        padding: 223px 0 230px 0;
+        position: relative;
+        z-index: 1;
+
+        @include breakpoint(max-lg) {
+            padding: 200px 0 150px 0;
+        }
+
+        @include breakpoint(max-md) {
+            margin: 0;
+        }
+    }
+
+    &-top {
+        max-width: 950px;
+        margin: 0 auto;
+        padding-bottom: 120px;
+        text-align: center;
+
+        @include breakpoint(max-lg) {
+            padding-bottom: 60px;
+        }
+
+        @include breakpoint(max-xxsmall) {
+            padding-bottom: 40px;
+        }
+
+        &__subtitle {
+            border: 1px solid $theme-color;
+            color: $theme-color;
+            padding: 6px 25px;
+            text-align: center;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+            border-radius: 10px;
+            margin-bottom: 36px;
+            display: inline-block;
+        }
+
+        &__title {
+            color: $white;
+            text-align: center;
+            font-family: $body-font;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 82px;
+
+            @include breakpoint(max-lg) {
+                font-size: 56px;
+                line-height: 65px;
+            }
+
+            @include breakpoint(max-sm) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+
+            @include breakpoint(max-xxsmall) {
+                font-size: 29px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    &-left {
+        position: relative;
+
+        @include breakpoint(max-xl) {
+            padding: 0 30px;
+        }
+
+        @include breakpoint(max-xxsmall) {
+            padding: 0;
+        }
+
+        &__thumb {
+            img {
+                width: 100%;
+                max-height: 652px;
+                border-radius: 15px;
+
+                @include breakpoint(max-md) {
+                    max-height: auto;
+                }
+            }
+        }
+
+        .img2 {
+            position: absolute;
+            right: -208px;
+            bottom: 0;
+            border-radius: 15px;
+            background-color: $theme-color;
+            padding: 45px;
+
+            @include breakpoint(max-xxxl) {
+                right: -180px;
+                bottom: 30px;
+                max-width: 500px;
+            }
+
+            @include breakpoint(max-xxl) {
+                max-width: 440px;
+                right: -150px;
+            }
+
+            @include breakpoint(max-xl) {
+                position: initial;
+                margin-top: 30px;
+            }
+
+            img {
+                border-radius: 15px;
+
+            }
+        }
+
+        &__card {
+            background-color: $white;
+            padding: 45px;
+            border-radius: 15px;
+
+            @include breakpoint(max-xxxl) {
+                padding: 23px;
+            }
+
+            @include breakpoint(max-xxl) {
+                padding: 17px;
+            }
+
+            @include breakpoint(max-md) {
+                margin-top: 30px;
+            }
+
+            &-avatar {
+                img {
+                    margin-left: -30px;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+
+            }
+
+            &-title {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 48px;
+                padding: 11px 0;
+
+                @include breakpoint(max-xxl) {
+                    font-size: 36px;
+                    line-height: 40px;
+                    padding: 6px 0;
+                }
+            }
+
+            &-text {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+            }
+        }
+    }
+
+    &-right {
+        position: relative;
+
+        &__thumb {
+            position: relative;
+
+            img {
+                width: 100%;
+                border-radius: 15px;
+                position: relative;
+
+            }
+
+            @include breakpoint(max-xl) {
+                display: none;
+            }
+        }
+
+        &__card {
+            background-color: $theme-color;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 280px;
+            width: 280px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 45px;
+
+            @include breakpoint(max-xxxl) {
+                height: 250px;
+                width: 250px;
+            }
+
+            @include breakpoint(max-xxl) {
+                height: 200px;
+                width: 200px;
+                padding: 20px;
+            }
+
+            @include breakpoint(max-xl) {
+                right: auto;
+                top: -160px;
+                left: 51%;
+                width: 300px;
+                height: 155px;
+            }
+
+            @include breakpoint(max-lg) {
+                height: 130px;
+                margin-top: 30px;
+            }
+
+            @include breakpoint(max-md) {
+                width: 92%;
+                position: initial;
+                margin-left: 20px;
+            }
+
+            a {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+            }
+        }
+    }
+}
