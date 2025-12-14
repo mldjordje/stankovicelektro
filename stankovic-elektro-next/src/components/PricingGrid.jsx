@@ -1,9 +1,12 @@
+import Reveal from "./Reveal";
+
 export default function PricingGrid({ plans }) {
   return (
     <div className="grid gap-4 md:grid-cols-3">
-      {plans.map((plan) => (
-        <div
+      {plans.map((plan, index) => (
+        <Reveal
           key={plan.name}
+          delay={80 * index}
           className={`panel rounded-2xl p-6 border border-slate-800/70 ${
             plan.highlighted ? "border-amber-300/60 shadow-lg shadow-amber-400/10" : ""
           }`}
@@ -16,12 +19,12 @@ export default function PricingGrid({ plans }) {
           <ul className="mt-4 space-y-2 text-sm text-slate-300">
             {plan.items.map((item) => (
               <li key={item} className="flex items-start gap-2">
-                <span className="text-amber-300">•</span>
+                <span className="text-amber-300">ƒ?›</span>
                 <span>{item}</span>
               </li>
             ))}
           </ul>
-        </div>
+        </Reveal>
       ))}
     </div>
   );

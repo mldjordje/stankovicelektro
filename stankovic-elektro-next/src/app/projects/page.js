@@ -1,9 +1,10 @@
 import PageIntro from "@/components/PageIntro";
 import ProjectsGrid from "@/components/ProjectsGrid";
+import Reveal from "@/components/Reveal";
 import { projects } from "@/data/siteContent";
 
 export const metadata = {
-  title: "Projekti | Stanković Elektro",
+  title: "Projekti | StankoviŽØ Elektro",
 };
 
 export default function ProjectsPage() {
@@ -12,9 +13,11 @@ export default function ProjectsPage() {
       <PageIntro
         kicker="Projekti"
         title="Referentni sistemi i uredna dokumentacija"
-        description="Industrijski i poslovni projekti sa jasnim šemama, etiketama i zapisnicima za održavanje bez zastoja."
+        description="Industrijski i poslovni projekti sa jasnim ­emama, etiketama i zapisnicima za odr_avanje bez zastoja."
       />
-      <ProjectsGrid projects={projects} />
+      <Reveal>
+        <ProjectsGrid projects={projects} />
+      </Reveal>
     </div>
   );
 }

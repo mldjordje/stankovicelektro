@@ -1,9 +1,10 @@
 import PageIntro from "@/components/PageIntro";
 import ServiceCards from "@/components/ServiceCards";
+import Reveal from "@/components/Reveal";
 import { services } from "@/data/siteContent";
 
 export const metadata = {
-  title: "Usluge | Stanković Elektro",
+  title: "Usluge | StankoviŽØ Elektro",
 };
 
 export default function ServicesPage() {
@@ -12,9 +13,11 @@ export default function ServicesPage() {
       <PageIntro
         kicker="Usluge"
         title="Kompletne elektro usluge i dokumentacija"
-        description="Projektovanje, izvođenje, šemiranje, servis i hitne intervencije. Transparentni troškovi i uredni zapisnici prate svaki rad."
+        description="Projektovanje, izvoŽ`enje, ­emiranje, servis i hitne intervencije. Transparentni tro­kovi i uredni zapisnici prate svaki rad."
       />
-      <ServiceCards services={services} variant="list" />
+      <Reveal>
+        <ServiceCards services={services} variant="list" />
+      </Reveal>
     </div>
   );
 }

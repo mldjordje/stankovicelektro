@@ -1,15 +1,18 @@
 import Link from "next/link";
 import { company } from "@/data/siteContent";
+import Reveal from "./Reveal";
 
 export default function ContactPanel() {
   return (
-    <div className="panel rounded-2xl p-6 border border-slate-800/70 space-y-3">
+    <Reveal className="panel rounded-2xl p-6 border border-slate-800/70 space-y-3">
       <h3 className="text-xl font-semibold">Kontaktirajte nas</h3>
-      <p className="text-slate-300">Precizan odgovor u roku od 1 radnog dana, hitne intervencije odmah.</p>
+      <p className="text-slate-300">
+        Precizan odgovor u roku od 1 radnog dana, hitne intervencije odmah.
+      </p>
       <div className="text-sm text-slate-300 space-y-2">
-        <p>📞 {company.phone}</p>
-        <p>✉️ {company.email}</p>
-        <p>📍 {company.location}</p>
+        <p>dY\"z {company.phone}</p>
+        <p>ƒo%‹,? {company.email}</p>
+        <p>dY\"? {company.location}</p>
       </div>
       <Link
         href={`tel:${company.phone.replace(/\s+/g, "")}`}
@@ -17,6 +20,6 @@ export default function ContactPanel() {
       >
         Pozovite sada
       </Link>
-    </div>
+    </Reveal>
   );
 }
