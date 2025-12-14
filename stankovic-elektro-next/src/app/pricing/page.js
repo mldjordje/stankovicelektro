@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import { pricing } from "@/data/siteContent";
 
 export const metadata = {
-  title: "Cene | StankoviŽØ Elektro",
+  title: "Cene | Stankovic Elektro",
 };
 
 export default function PricingPage() {
@@ -13,7 +13,7 @@ export default function PricingPage() {
       <PageIntro
         kicker="Cene"
         title="Transparentni paketi za sve tipove objekata"
-        description="Jasno definisani tro­kovi materijala i rada, bez skrivenih stavki. Svaki rad prate zapisnici i garancija."
+        description="Jasno definisani troskovi materijala i rada, bez skrivenih stavki. Svaki rad prate zapisnici i garancija."
       />
       <Reveal>
         <PricingGrid plans={pricing} />

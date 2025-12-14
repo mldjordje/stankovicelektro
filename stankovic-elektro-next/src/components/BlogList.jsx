@@ -17,7 +17,7 @@ export default function BlogList({ posts }) {
             href={`/blog/${post.slug}`}
             className="inline-flex items-center gap-2 text-sm text-amber-300 mt-3"
           >
-            ProŽ?itajte vi­e ƒ+'
+            Procitajte vise -&gt;
           </Link>
         </Reveal>
       ))}

@@ -10,9 +10,9 @@ export default function ContactPanel() {
         Precizan odgovor u roku od 1 radnog dana, hitne intervencije odmah.
       </p>
       <div className="text-sm text-slate-300 space-y-2">
-        <p>dY\"z {company.phone}</p>
-        <p>ƒo%‹,? {company.email}</p>
-        <p>dY\"? {company.location}</p>
+        <p>Telefon: {company.phone}</p>
+        <p>Email: {company.email}</p>
+        <p>Lokacija: {company.location}</p>
       </div>
       <Link
         href={`tel:${company.phone.replace(/\s+/g, "")}`}

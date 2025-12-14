@@ -23,7 +23,7 @@ export default function Home() {
         <SectionHeader
           eyebrow="Usluge"
           title="Sve elektro usluge na jednom mestu"
-          description="Instalacije, ­emiranje, servis i dokumentacija sa punom trasom odgovornosti. Fokus na sigurnost, urednost i brz odgovor."
+          description="Instalacije, semiranje, servis i dokumentacija sa punom trasom odgovornosti. Fokus na sigurnost, urednost i brz odgovor."
         />
         <ServiceCards services={services.slice(0, 3)} />
       </Reveal>
@@ -37,12 +37,12 @@ export default function Home() {
             <SectionHeader
               eyebrow="O nama"
               title="Precizan tim koji dokumentuje svaku vezu"
-              description="StankoviŽØ Elektro je struŽ?na elektro-instalaterska firma posveŽØena celom sistemu ƒ?" od ugradnje do ­emiranja i etiketiranja. Radimo stambene, poslovne i industrijske objekte uz jasne zapisnike i garanciju."
+              description="Stankovic Elektro je strucna elektro-instalaterska firma posvecena celom sistemu - od ugradnje do semiranja i etiketiranja. Radimo stambene, poslovne i industrijske objekte uz jasne zapisnike i garanciju."
             />
             <ul className="space-y-2 text-slate-300 text-sm">
-              <li>ƒ?› Projektovanje i izvoŽ`enje instalacija po standardu</li>
-              <li>ƒ?› ÿemiranje i oznaŽ?avanje elektro ormara sa Ž?itljivim dokumentima</li>
-              <li>ƒ?› Hitne intervencije 24/7 i transparentne cene</li>
+              <li>- Projektovanje i izvodjenje instalacija po standardu</li>
+              <li>- Semiranje i oznacavanje elektro ormara sa citljivim dokumentima</li>
+              <li>- Hitne intervencije 24/7 i transparentne cene</li>
             </ul>
             <div className="flex gap-3">
               <Link
@@ -65,14 +65,14 @@ export default function Home() {
               <div className="aspect-video overflow-hidden rounded-xl border border-slate-800">
                 <Image
                   src="/assets/images/2.jpeg"
-                  alt="MontaŽ?a i kabliranje ormara"
+                  alt="Montaza i kabliranje ormara"
                   width={640}
                   height={420}
                   className="h-full w-full object-cover"
                 />
               </div>
               <p className="mt-3 text-sm text-slate-300">
-                Snimak terenskog ­emiranja sa urednim obeleŽ?avanjima i zapisnikom.
+                Snimak terenskog semiranja sa urednim obelezavanjima i zapisnikom.
               </p>
             </Reveal>
           </div>
@@ -86,7 +86,7 @@ export default function Home() {
         <SectionHeader
           eyebrow="Projekti"
           title="Izabrani projekti i referentni sistemi"
-          description="Industrija, poslovni prostori i stambene instalacije sa urednom evidencijom za odr_avanje i reviziju."
+          description="Industrija, poslovni prostori i stambene instalacije sa urednom evidencijom za odrzavanje i reviziju."
         />
         <ProjectsGrid projects={projects} />
       </Reveal>
@@ -98,7 +98,7 @@ export default function Home() {
         <SectionHeader
           eyebrow="Sa terena"
           title="Vizuelni pregled radova"
-          description="Na­e montaŽ?e, ­emiranje i kontrola kvaliteta ƒ?" realne scene pre i posle intervencije."
+          description="Nase montaze, semiranje i kontrola kvaliteta - realne scene pre i posle intervencije."
         />
         <div className="grid gap-4 md:grid-cols-3">
           <Reveal className="panel rounded-2xl p-4 border border-slate-800/70 space-y-3 h-full">
@@ -113,7 +113,7 @@ export default function Home() {
             </div>
             <div>
               <p className="text-sm text-amber-200 uppercase tracking-[0.12em]">Industrija</p>
-              <p className="text-slate-300 text-sm">Razvodne table spremne za pu­tanje u pogon.</p>
+              <p className="text-slate-300 text-sm">Razvodne table spremne za pustanje u pogon.</p>
             </div>
           </Reveal>
           <Reveal
@@ -123,7 +123,7 @@ export default function Home() {
             <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-slate-800/80">
               <Image
                 src="/assets/images/preiposle.jpeg"
-                alt="Pre i posle sre?ivanja elektro ormara"
+                alt="Pre i posle sredjivanja elektro ormara"
                 width={520}
                 height={360}
                 className="h-full w-full object-cover"
@@ -135,7 +135,7 @@ export default function Home() {
             <div>
               <p className="text-sm text-amber-200 uppercase tracking-[0.12em]">Revitalizacija</p>
               <p className="text-slate-300 text-sm">
-                Uredno ­emiranje, etiketiranje i testiranje svih vodova.
+                Uredno semiranje, etiketiranje i testiranje svih vodova.
               </p>
             </div>
           </Reveal>
@@ -146,7 +146,7 @@ export default function Home() {
             <div className="aspect-[4/3] overflow-hidden rounded-xl border border-slate-800/80">
               <Image
                 src="/assets/images/4.jpeg"
-                alt="Kontrola polja i ­ema"
+                alt="Kontrola polja i seme"
                 width={520}
                 height={360}
                 className="h-full w-full object-cover"
@@ -155,7 +155,7 @@ export default function Home() {
             <div>
               <p className="text-sm text-amber-200 uppercase tracking-[0.12em]">Provera</p>
               <p className="text-slate-300 text-sm">
-                Pregled ­ema i numeracija vodova pre finalnog zatvaranja.
+                Pregled sema i numeracija vodova pre finalnog zatvaranja.
               </p>
             </div>
           </Reveal>
@@ -168,8 +168,8 @@ export default function Home() {
       >
         <SectionHeader
           eyebrow="Cene"
-          title="Transparentne ponude bez skrivenih tro­kova"
-          description="Planovi za stambene, poslovne i industrijske potrebe. Svaka ponuda sadr_i razradu materijala, rada i garancije."
+          title="Transparentne ponude bez skrivenih troskova"
+          description="Planovi za stambene, poslovne i industrijske potrebe. Svaka ponuda sadrzi razradu materijala, rada i garancije."
         />
         <PricingGrid plans={pricing} />
       </Reveal>
@@ -178,7 +178,7 @@ export default function Home() {
         as="section"
         className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16 space-y-8"
       >
-        <SectionHeader eyebrow="Blog" title="Sve_i saveti iz prakse" />
+        <SectionHeader eyebrow="Blog" title="Svezi saveti iz prakse" />
         <BlogList posts={blogPosts} />
       </Reveal>
 
@@ -186,7 +186,7 @@ export default function Home() {
         as="section"
         className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16 space-y-8"
       >
-        <SectionHeader eyebrow="FAQ" title="NajŽ?e­ŽØa pitanja" />
+        <SectionHeader eyebrow="FAQ" title="Najcesca pitanja" />
         <FAQAccordion faqs={faqs} />
       </Reveal>
 
@@ -194,7 +194,7 @@ export default function Home() {
         <div className="panel rounded-2xl p-8 border border-slate-800/70 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="space-y-2">
             <p className="text-sm text-amber-200 uppercase tracking-[0.12em]">24/7</p>
-            <h3 className="text-2xl font-semibold">Brza podr­ka i uredna dokumentacija</h3>
+            <h3 className="text-2xl font-semibold">Brza podrska i uredna dokumentacija</h3>
             <p className="text-slate-300">{company.promise}</p>
           </div>
           <div className="flex gap-3">
@@ -202,7 +202,7 @@ export default function Home() {
               href="/contact"
               className="rounded-full bg-amber-400 text-slate-950 px-5 py-3 text-sm font-semibold shadow-lg shadow-amber-400/20"
             >
-              NaruŽ?ite servis
+              Narucite servis
             </Link>
             <Link
               href="/faq"

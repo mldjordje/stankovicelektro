@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Stanković Elektro | Kompletna elektro-instalacija i šemiranje elektro ormara",
+  title: "Stankovic Elektro | Kompletna elektro-instalacija i semiranje elektro ormara",
   description:
-    "Stanković Elektro nudi brze, profesionalne i pouzdane elektro usluge: instalacije, šemiranje ormara i 24/7 intervencije za stambene, poslovne i industrijske objekte.",
+    "Stankovic Elektro nudi brze, profesionalne i pouzdane elektro usluge: instalacije, semiranje ormara i 24/7 intervencije za stambene, poslovne i industrijske objekte.",
 };
 
 export default function RootLayout({ children }) {

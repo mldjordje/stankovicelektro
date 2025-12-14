@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import { company } from "@/data/siteContent";
 
 export const metadata = {
-  title: "Kontakt | StankoviŽØ Elektro",
+  title: "Kontakt | Stankovic Elektro",
 };
 
 export default function ContactPage() {
@@ -12,7 +12,7 @@ export default function ContactPage() {
     <div className="mx-auto max-w-5xl px-4 md:px-6 py-12 md:py-16 space-y-10">
       <PageIntro
         kicker="Kontakt"
-        title="Pozovite nas ili po­aljite upit"
+        title="Pozovite nas ili posaljite upit"
         description={company.promise}
       />
       <div className="grid gap-6 md:grid-cols-[1.1fr,0.9fr]">
@@ -23,7 +23,7 @@ export default function ContactPage() {
               <input
                 type="text"
                 className="w-full rounded-lg border border-slate-800 bg-slate-900/60 px-3 py-2 text-slate-100"
-                placeholder="Va­e ime"
+                placeholder="Vase ime"
               />
             </label>
             <label className="space-y-2 text-sm">
@@ -57,17 +57,17 @@ export default function ContactPage() {
             <textarea
               rows="4"
               className="w-full rounded-lg border border-slate-800 bg-slate-900/60 px-3 py-2 text-slate-100"
-              placeholder="Kratko opi­ite ­ta vam je potrebno..."
+              placeholder="Kratko opisite sta vam je potrebno..."
             />
           </label>
           <button
             type="submit"
             className="rounded-full bg-amber-400 text-slate-950 px-5 py-3 text-sm font-semibold shadow-lg shadow-amber-400/20 hover:bg-amber-300 transition-colors"
           >
-            Po­aljite upit
+            Posaljite upit
           </button>
           <p className="text-xs text-slate-400">
-            Slanjem forme potvrŽ`ujete da su podaci taŽ?ni. Odgovaramo u roku od jednog radnog dana.
+            Slanjem forme potvrdujete da su podaci tacni. Odgovaramo u roku od jednog radnog dana.
           </p>
         </Reveal>
         <Reveal delay={120}>

@@ -6,7 +6,7 @@ import Reveal from "@/components/Reveal";
 import { services, company } from "@/data/siteContent";
 
 export const metadata = {
-  title: "O nama | StankoviŽØ Elektro",
+  title: "O nama | Stankovic Elektro",
 };
 
 export default function AboutPage() {
@@ -14,8 +14,8 @@ export default function AboutPage() {
     <div className="mx-auto max-w-5xl px-4 md:px-6 py-12 md:py-16 space-y-12">
       <PageIntro
         kicker="O nama"
-        title="StruŽ?an tim za instalacije, ­emiranje i dokumentaciju"
-        description="StankoviŽØ Elektro je precizna i struŽ?na elektro-instalaterska firma, posveŽØena celokupnom sistemu od instalacije do ­emiranja elektro ormara. Na­ tim pru_a kompletna re­enja za stambene, poslovne i industrijske objekte."
+        title="Strucan tim za instalacije, semiranje i dokumentaciju"
+        description="Stankovic Elektro je precizna i strucna elektro-instalaterska firma, posvecena celokupnom sistemu od instalacije do semiranja elektro ormara. Nas tim pruza kompletna resenja za stambene, poslovne i industrijske objekte."
       />
 
       <Reveal className="panel rounded-2xl p-6 border border-slate-800/70 space-y-3">
@@ -30,7 +30,7 @@ export default function AboutPage() {
         </div>
         <div className="flex flex-wrap items-center justify-between gap-3">
           <p className="text-slate-300 text-sm">
-            Realan prikaz na­eg procesa: oznaŽ?avanje, ­emiranje i provera pre pu­tanja u rad.
+            Realan prikaz naseg procesa: oznacavanje, semiranje i provera pre pustanja u rad.
           </p>
           <span className="rounded-full bg-amber-300/10 px-3 py-1 text-xs font-semibold text-amber-200 border border-amber-200/30">
             Dokumentovana isporuka
@@ -42,26 +42,25 @@ export default function AboutPage() {
         <div className="panel rounded-2xl p-6 border border-slate-800/70 space-y-3">
           <h3 className="text-xl font-semibold">Kako radimo</h3>
           <p className="text-slate-300">
-            Svaki projekat vodimo po standardima, sa jasnim zapisnicima i ­emama. Te_imo
-            maksimalnoj bezbednosti, efikasnosti i dugovekovnosti sistema ƒ?" na tome gradimo
-            poverenje klijenata.
+            Svaki projekat vodimo po standardima, sa jasnim zapisnicima i semama. Tezimo maksimalnoj
+            bezbednosti, efikasnosti i dugovekovnosti sistema - na tome gradimo poverenje klijenata.
           </p>
           <ul className="text-sm text-slate-300 space-y-2">
-            <li>ƒ?› Projektovanje i izvoŽ`enje instalacija sa ispitivanjem</li>
-            <li>ƒ?› ÿemiranje i etiketiranje za brzu dijagnostiku</li>
-            <li>ƒ?› Redovne i vanredne intervencije 24/7</li>
+            <li>- Projektovanje i izvodjenje instalacija sa ispitivanjem</li>
+            <li>- Semiranje i etiketiranje za brzu dijagnostiku</li>
+            <li>- Redovne i vanredne intervencije 24/7</li>
           </ul>
         </div>
         <div className="panel rounded-2xl p-6 border border-slate-800/70 space-y-3">
-          <h3 className="text-xl font-semibold">Za­to StankoviŽØ Elektro</h3>
+          <h3 className="text-xl font-semibold">Zasto Stankovic Elektro</h3>
           <p className="text-slate-300">
-            Brze reakcije, jasni tro­kovi i uredna dokumentacija. Transparentne cene, bez
-            skrivenih stavki, uz garanciju na izvedene radove.
+            Brze reakcije, jasni troskovi i uredna dokumentacija. Transparentne cene, bez skrivenih
+            stavki, uz garanciju na izvedene radove.
           </p>
           <ul className="text-sm text-slate-300 space-y-2">
-            <li>ƒ?› Jasne ponude i zapisnici o svakoj intervenciji</li>
-            <li>ƒ?› Industrija, poslovni objekti i stambeni sistemi</li>
-            <li>ƒ?› Tim koji ostaje na vezi i posle implementacije</li>
+            <li>- Jasne ponude i zapisnici o svakoj intervenciji</li>
+            <li>- Industrija, poslovni objekti i stambeni sistemi</li>
+            <li>- Tim koji ostaje na vezi i posle implementacije</li>
           </ul>
         </div>
       </Reveal>
@@ -70,7 +69,7 @@ export default function AboutPage() {
         <SectionHeader
           eyebrow="Usluge"
           title="Fokus na urednim i bezbednim instalacijama"
-          description="Od glavnog dovoda do poslednje utiŽ?nice ƒ?" svi radovi imaju prateŽØu dokumentaciju i ­eme."
+          description="Od glavnog dovoda do poslednje uticnice - svi radovi imaju pratecu dokumentaciju i seme."
         />
         <div className="grid gap-3 md:grid-cols-2">
           {services.slice(0, 4).map((service, index) => (

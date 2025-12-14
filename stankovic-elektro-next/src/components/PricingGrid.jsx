@@ -1,6 +1,8 @@
 import Reveal from "./Reveal";
 
 export default function PricingGrid({ plans }) {
+  const bullet = <span className="text-amber-300">-&gt;</span>;
+
   return (
     <div className="grid gap-4 md:grid-cols-3">
       {plans.map((plan, index) => (
@@ -19,7 +21,7 @@ export default function PricingGrid({ plans }) {
           <ul className="mt-4 space-y-2 text-sm text-slate-300">
             {plan.items.map((item) => (
               <li key={item} className="flex items-start gap-2">
-                <span className="text-amber-300">ƒ?›</span>
+                {bullet}
                 <span>{item}</span>
               </li>
             ))}

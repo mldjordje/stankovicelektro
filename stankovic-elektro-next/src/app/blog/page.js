@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import { blogPosts } from "@/data/siteContent";
 
 export const metadata = {
-  title: "Blog | StankoviŽØ Elektro",
+  title: "Blog | Stankovic Elektro",
 };
 
 export default function BlogPage() {
@@ -13,7 +13,7 @@ export default function BlogPage() {
       <PageIntro
         kicker="Blog"
         title="Saveti iz elektro prakse"
-        description="Brze napomene iz terena: kako pripremamo ormare, ­ta raditi u hitnim situacijama i kako planirati modernizaciju."
+        description="Brze napomene iz terena: kako pripremamo ormare, sta raditi u hitnim situacijama i kako planirati modernizaciju."
       />
       <Reveal>
         <BlogList posts={blogPosts} />

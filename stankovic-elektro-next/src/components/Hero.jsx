@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <Reveal className="space-y-6">
             <div className="inline-flex items-center gap-2 rounded-full border border-amber-200/30 bg-amber-200/10 px-4 py-2 text-sm text-amber-200">
-              Precizno ­emiranje ƒ?› 24/7 intervencije
+              Precizno semiranje / 24/7 intervencije
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
               {company.name}{" "}
@@ -37,7 +37,7 @@ export default function Hero() {
                 href="/contact"
                 className="rounded-full bg-amber-400 text-slate-950 px-5 py-3 text-sm font-semibold shadow-lg shadow-amber-400/20 hover:bg-amber-300 transition-colors"
               >
-                Zaka_ite servis
+                Zakazite servis
               </Link>
               <Link
                 href="/services/semiranje-ormara"
@@ -48,10 +48,10 @@ export default function Hero() {
             </div>
             <div className="flex flex-wrap items-center gap-4 text-sm text-slate-300">
               <span className="flex items-center gap-2">
-                ƒo. Dokumentacija i etikete za svaki ormar
+                - Dokumentacija i etikete za svaki ormar
               </span>
               <span className="flex items-center gap-2">
-                dY"O Servis za stambene, poslovne i industrijske objekte
+                - Servis za stambene, poslovne i industrijske objekte
               </span>
             </div>
           </Reveal>
@@ -60,7 +60,7 @@ export default function Hero() {
             <div className="panel rounded-2xl p-3 relative">
               <Image
                 src="/assets/images/5.jpeg"
-                alt="Instalacija StankoviŽØ Elektro"
+                alt="Instalacija Stankovic Elektro"
                 width={720}
                 height={520}
                 className="rounded-xl border border-slate-800 object-cover"
@@ -70,7 +70,7 @@ export default function Hero() {
                 <div className="h-24 w-full overflow-hidden rounded-lg border border-slate-800/80">
                   <Image
                     src="/assets/images/4.jpeg"
-                    alt="Detalj ­emiranja ormara"
+                    alt="Detalj semiranja ormara"
                     width={320}
                     height={160}
                     className="h-full w-full object-cover"

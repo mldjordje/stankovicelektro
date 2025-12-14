@@ -15,20 +15,20 @@ export default function BlogDetail({ params }) {
 
   return (
     <div className="mx-auto max-w-4xl px-4 md:px-6 py-12 md:py-16 space-y-10">
-        <PageIntro kicker={post.category} title={post.title} description={post.excerpt} />
+      <PageIntro kicker={post.category} title={post.title} description={post.excerpt} />
       <article className="panel rounded-2xl p-6 border border-slate-800/70 space-y-4 text-slate-200 leading-relaxed">
         <p>
-          U Stanković Elektro svaki posao počinje dijagnostikom i planom. Beležimo stanje, dogovaramo
-          rokove i zatim radimo po standardu. Nakon toga sledi šemiranje i obeležavanje, kako bi
-          održavanje bilo jasno i bezbedno.
+          U Stankovic Elektro svaki posao pocinje dijagnostikom i planom. Belezimo stanje, dogovaramo
+          rokove i zatim radimo po standardu. Nakon toga sledi semiranje i obelezavanje, kako bi
+          odrzavanje bilo jasno i bezbedno.
         </p>
         <p>
-          Najviše pazimo na: urednost kablova, jasne etikete i kvalitetne komponente. Svaka intervencija
-          završava se zapisnikom, fotografijama i preporukama za dalji rad.
+          Najvise pazimo na: urednost kablova, jasne etikete i kvalitetne komponente. Svaka intervencija
+          zavrsava se zapisnikom, fotografijama i preporukama za dalji rad.
         </p>
         <p>
-          Za hitne situacije reagujemo odmah, a za veće projekte planiramo u fazama da bismo izbegli
-          zastoje. Cilj nam je da instalacija bude dugovečna i laka za servis.
+          Za hitne situacije reagujemo odmah, a za vece projekte planiramo u fazama da bismo izbegli
+          zastoje. Cilj nam je da instalacija bude dugovecna i laka za servis.
         </p>
       </article>
       <ContactPanel />

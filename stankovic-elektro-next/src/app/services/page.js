@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import { services } from "@/data/siteContent";
 
 export const metadata = {
-  title: "Usluge | StankoviŽØ Elektro",
+  title: "Usluge | Stankovic Elektro",
 };
 
 export default function ServicesPage() {
@@ -13,7 +13,7 @@ export default function ServicesPage() {
       <PageIntro
         kicker="Usluge"
         title="Kompletne elektro usluge i dokumentacija"
-        description="Projektovanje, izvoŽ`enje, ­emiranje, servis i hitne intervencije. Transparentni tro­kovi i uredni zapisnici prate svaki rad."
+        description="Projektovanje, izvodjenje, semiranje, servis i hitne intervencije. Transparentni troskovi i uredni zapisnici prate svaki rad."
       />
       <Reveal>
         <ServiceCards services={services} variant="list" />

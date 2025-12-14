@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import { projects } from "@/data/siteContent";
 
 export const metadata = {
-  title: "Projekti | StankoviŽØ Elektro",
+  title: "Projekti | Stankovic Elektro",
 };
 
 export default function ProjectsPage() {
@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       <PageIntro
         kicker="Projekti"
         title="Referentni sistemi i uredna dokumentacija"
-        description="Industrijski i poslovni projekti sa jasnim ­emama, etiketama i zapisnicima za odr_avanje bez zastoja."
+        description="Industrijski i poslovni projekti sa jasnim semama, etiketama i zapisnicima za odrzavanje bez zastoja."
       />
       <Reveal>
         <ProjectsGrid projects={projects} />

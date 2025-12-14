@@ -15,11 +15,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur border-b border-slate-800/70 bg-slate-950/80">
       <div className="hidden md:flex items-center justify-between px-6 py-2 text-xs text-slate-200 bg-slate-900 border-b border-slate-800/70">
-        <span className="flex items-center gap-2 text-amber-200">
-          📞 {company.phone}
-        </span>
+        <span className="flex items-center gap-2 text-amber-200">Telefon: {company.phone}</span>
         <span className="text-slate-300">{company.promise}</span>
-        <span className="flex items-center gap-2">📍 Servis širom Srbije</span>
+        <span className="flex items-center gap-2">Servis sirom Srbije</span>
       </div>
       <div className="flex items-center justify-between px-4 md:px-6 py-4">
         <Link href="/" className="flex items-center gap-3">
@@ -27,20 +25,14 @@ export default function Header() {
             SE
           </span>
           <div className="flex flex-col leading-tight">
-            <span className="text-lg font-semibold tracking-tight">
-              {company.name}
-            </span>
-            <span className="text-xs text-slate-400">
-              Instalacije • Šemiranje ormara
-            </span>
+            <span className="text-lg font-semibold tracking-tight">{company.name}</span>
+            <span className="text-xs text-slate-400">Instalacije / Semiranje ormara</span>
           </div>
         </Link>
         <nav className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => {
             const active =
-              link.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(link.href);
+              link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
             return (
               <Link
                 key={link.href}
@@ -53,17 +45,14 @@ export default function Header() {
           })}
         </nav>
         <div className="hidden md:flex items-center gap-3">
-          <Link
-            href="tel:+381640136237"
-            className="text-sm font-semibold text-amber-300"
-          >
+          <Link href={`tel:${company.phone.replace(/\s+/g, "")}`} className="text-sm font-semibold text-amber-300">
             {company.phone}
           </Link>
           <Link
             href="/contact"
             className="rounded-full bg-amber-400 text-slate-950 px-4 py-2 text-sm font-semibold shadow-lg shadow-amber-400/20 hover:bg-amber-300 transition-colors"
           >
-            Zakažite servis
+            Zakazite servis
           </Link>
         </div>
         <button
@@ -71,7 +60,7 @@ export default function Header() {
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle navigation"
         >
-          {open ? "✕" : "☰"}
+          {open ? "Close" : "Menu"}
         </button>
       </div>
       {open && (
@@ -79,9 +68,7 @@ export default function Header() {
           <nav className="flex flex-col gap-3 py-3">
             {navLinks.map((link) => {
               const active =
-                link.href === "/"
-                  ? pathname === "/"
-                  : pathname.startsWith(link.href);
+                link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
               return (
                 <Link
                   key={link.href}
@@ -96,7 +83,7 @@ export default function Header() {
           </nav>
           <div className="flex flex-col gap-2">
             <Link
-              href="tel:+381640136237"
+              href={`tel:${company.phone.replace(/\s+/g, "")}`}
               className="rounded-lg border border-slate-800 px-4 py-2 text-sm text-slate-200"
             >
               Pozovite: {company.phone}
@@ -106,7 +93,7 @@ export default function Header() {
               className="rounded-lg bg-amber-400 text-slate-950 px-4 py-2 text-sm font-semibold text-center shadow-lg shadow-amber-400/20"
               onClick={() => setOpen(false)}
             >
-              Zakažite servis
+              Zakazite servis
             </Link>
           </div>
         </div>
