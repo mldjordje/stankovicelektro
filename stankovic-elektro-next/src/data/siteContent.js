@@ -2,9 +2,9 @@ export const company = {
   name: "Stankovic Elektro",
   tagline: "Kompletna elektro-instalacija i semiranje elektro ormara za vasu sigurnost.",
   promise: "Brze, profesionalne i pouzdane elektro usluge od montaze do dokumentovanog semiranja.",
-  phone: "+381 64 0136237",
+  phone: "+381658918453",
   email: "kontakt@stankovicelektro.rs",
-  location: "Beograd, Srbija",
+  location: "Ni\u0161, Srbija",
 };
 
 export const navLinks = [
@@ -102,8 +102,8 @@ export const projects = [
     tags: ["Industrija", "Semiranje", "Dokumentacija"],
   },
   {
-    slug: "protim-poslovni-prostor",
-    title: "protim.rs - modernizacija poslovnog prostora",
+    slug: "modernizacija-poslovnog-prostora",
+    title: "Modernizacija poslovnog prostora",
     summary:
       "Modernizacija razvodnih tabli, montaza rasvete i zastitnih sistema sa jasnim semama za odrzavanje bez zastoja.",
     tags: ["Poslovni objekti", "Rasveta", "Sigurnost"],
@@ -155,7 +155,7 @@ export const faqs = [
   {
     question: "Da li radite hitne intervencije?",
     answer:
-      "Da, dezuramo 24/7. Pozovite nas na +381 64 0136237 i tim izlazi na teren uz jasnu dijagnostiku i zapisnik.",
+      "Da, dezuramo 24/7. Pozovite nas na +381658918453 i tim izlazi na teren uz jasnu dijagnostiku i zapisnik.",
   },
   {
     question: "Kako izgleda semiranje elektro ormara?",
