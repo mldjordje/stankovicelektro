@@ -3,7 +3,7 @@ export const company = {
   tagline: "Kompletna elektro-instalacija i semiranje elektro ormara za vasu sigurnost.",
   promise: "Brze, profesionalne i pouzdane elektro usluge od montaze do dokumentovanog semiranja.",
   phone: "+381658918453",
-  email: "kontakt@stankovicelektro.rs",
+  email: "stankovic.elektro027@gmail.com",
   location: "Ni\u0161, Srbija",
 };
 
