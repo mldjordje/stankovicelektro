@@ -19,9 +19,8 @@ export default function ContactPage() {
         <Reveal>
           <form
             className="panel rounded-2xl p-6 border border-slate-800/70 space-y-4"
-            action={`mailto:${company.email}`}
-            method="post"
-            encType="text/plain"
+            action={`https://formsubmit.co/${company.email}`}
+            method="POST"
           >
             <div className="grid gap-4 md:grid-cols-2">
               <label className="space-y-2 text-sm">
